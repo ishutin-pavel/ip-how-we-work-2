@@ -1,0 +1,118 @@
+/*
+ * IP How We Work 2
+ * https://github.com/ishutin-pavel/
+ */
+.how-we-work-2__wrap {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.how-we-work-2 {
+  position: relative;
+}
+
+/* пунктирная линия */
+.how-we-work-2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 53px;
+  left: 110px;
+  height: 4px;
+  width: 75%;
+  background-image: url(/wp-content/themes/ip/blocks/ip-how-we-work-2/images/work_line_new.png);
+  z-index: 1;
+}
+@media (max-width: 1000px) {
+  .how-we-work-2:after {
+    display: none;
+  }
+}
+
+.how-we-work-2__item {
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  z-index: 10;
+}
+@media (max-width: 799px) {
+  .how-we-work-2__item {
+    min-height: 145px;
+    padding-left: 130px;
+    background-position-x: left !important;
+  }
+}
+@media (min-width: 800px) {
+  .how-we-work-2__item {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding-top: 135px;
+    width: 19.5%;
+    text-align: center;
+  }
+}
+
+/* Стрелка > */
+.how-we-work-2__item:before {
+  display: none;
+  content: "";
+  width: 35px;
+  position: absolute;
+  height: 19px;
+  right: -15px;
+  top: 46px;
+  background: url(/wp-content/themes/ip/blocks/ip-how-we-work-2/images/work_arrow.png) no-repeat center top;
+  z-index: 99;
+}
+@media (min-width: 1000px) {
+  .how-we-work-2__item:before {
+    display: block;
+  }
+}
+
+.how-we-work-2__item:last-child:after,
+.how-we-work-2__item:last-child:before {
+  display: none;
+}
+
+
+.how-we-work-2__item_1 {
+  background: url(/wp-content/themes/ip/blocks/ip-how-we-work-2/images/work1.png) no-repeat center top;
+}
+.how-we-work-2__item_2 {
+  background: url(/wp-content/themes/ip/blocks/ip-how-we-work-2/images/work2.png) no-repeat center top;
+}
+.how-we-work-2__item_3 {
+  background: url(/wp-content/themes/ip/blocks/ip-how-we-work-2/images/work3.png) no-repeat center top;
+}
+.how-we-work-2__item_4 {
+  background: url(/wp-content/themes/ip/blocks/ip-how-we-work-2/images/work4.png) no-repeat center top;
+}
+.how-we-work-2__item_5 {
+  background: url(/wp-content/themes/ip/blocks/ip-how-we-work-2/images/work5.png) no-repeat center top;
+}
+
+.how-we-work-2__desc {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 230px;
+}
+@media (max-width: 800px) {
+  .how-we-work-2__desc {
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
+
+
+.how-we-work-2__name {
+  color: $color__secondary;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
